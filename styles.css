@@ -1047,9 +1047,9 @@ input[type=text]:focus {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .skills-content h1{
+  /* .skills-content h1{
     box-shadow: 40px 0 100px rgba(255, 255, 255, 0.361);
-  }
+  } */
   .cf-container{
     border-top:3px solid white;
     border-bottom: 1px solid white;
@@ -1057,9 +1057,9 @@ input[type=text]:focus {
   #skills{
     background-image: none;
   }
-  .all :hover{
+  /* .all :hover{
     height: 200px;
-  }
+  } */
   .linkedin-icon{
     margin: 0;
     height: 40px;
@@ -1094,6 +1094,7 @@ input[type=text]:focus {
   .skills-content p {
     font-size: 14px;
     margin: 20px 0 40px 0;
+    color: #8f8f8f;
   }
 
   .skills-grid {
