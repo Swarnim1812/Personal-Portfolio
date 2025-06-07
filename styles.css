@@ -975,7 +975,7 @@ input[type=text]:focus {
   }
   .navbar a{
     font-size: 11px;
-    padding: 0;
+    padding: 10px;
     /* margin: 0.8em; */
   }
   #theme-icon{
@@ -992,8 +992,8 @@ input[type=text]:focus {
 @media(max-width : 470px) {
   .navbar a{
     font-size: 12px;
-    padding: 0;
-    margin: 1em;
+    padding: 10px;
+    margin: 0em;
   }
   .header{
     display: flex;
@@ -1242,6 +1242,7 @@ input[type=text]:focus {
     flex-direction: column !important;
     padding: 20px;
     text-align: center;
+    background-color: rgb(157, 157, 147);
   }
 
   .project-img img {
@@ -1267,12 +1268,14 @@ input[type=text]:focus {
 
   .project-desc p {
     font-size: 13px;
+    color: #272727;
   }
 
   .project-desc ul {
     padding-left: 0;
     list-style: none;
     font-size: 13px;
+    color: #272727;
   }
 
   .project-desc ul li {
