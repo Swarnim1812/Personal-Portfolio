@@ -145,10 +145,10 @@ html{
     width: 0;
   }
   60% {
-    width: 100%;
+    width: 80%;
   }
   80% {
-    width: 100%;
+    width: 80%;
   }
   100% {
     width: 0;
@@ -899,6 +899,7 @@ input[type=text]:focus {
     border-radius: 10%;
     margin-top: 30px;
     border: 3px solid white;
+    box-shadow:  0px 0px 300px 1px rgba(7, 239, 165, 0.694);
   }
   .secheading{
     top: 60px;
@@ -960,6 +961,7 @@ input[type=text]:focus {
 @media screen and (max-width : 500px) {
   .intro h1{
     font-size: 25px;
+    transform: translate(0);
   }
   .intro h3{
     font-size: 17px;
@@ -1242,13 +1244,14 @@ input[type=text]:focus {
     flex-direction: column !important;
     padding: 20px;
     text-align: center;
-    background-color: rgb(158, 158, 154);
+    background-color: rgb(0, 0, 0);
   }
 
   .project-img img {
     width: 100%;
     height: auto;
     max-width: 100%;
+    border: rgb(95, 95, 95) 1px solid;
   }
 
   .project-desc {
@@ -1256,30 +1259,33 @@ input[type=text]:focus {
     max-width: 100%;
     text-align: center;
   }
-
+  
   .project-desc span {
+    color: white;
     font-size: 11px;
   }
 
   .project-desc h2 {
+    color: white;
     font-size: 20px;
     text-align: center;
   }
 
   .project-desc p {
     font-size: 13px;
-    color: #272727;
+    color: white;
   }
 
   .project-desc ul {
     padding-left: 0;
     list-style: none;
     font-size: 13px;
-    color: #272727;
+    color: white;
   }
 
   .project-desc ul li {
     margin-bottom: 5px;
+    color: white;
   }
 
 
