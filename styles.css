@@ -135,7 +135,7 @@ html{
 .intro h1 {
   font-size: 50px;
   margin-bottom: 20px;
-  line-height: 1;
+  line-height: 1.2;
   transform: translateX(-30px);
   overflow: hidden;
   white-space: nowrap;
