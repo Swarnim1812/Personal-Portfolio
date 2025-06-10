@@ -1081,7 +1081,9 @@ input[type=text]:focus {
   }
 
 
-
+  .intro{
+    scale: 1;
+  }
   /* ------------------------------------------ */
   .intro h1{
     font-size: 25px;
