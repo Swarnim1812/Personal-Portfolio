@@ -145,10 +145,10 @@ html{
     width: 0;
   }
   60% {
-    width: 80%;
+    width: 100%;
   }
   80% {
-    width: 80%;
+    width: 100%;
   }
   100% {
     width: 0;
@@ -963,6 +963,20 @@ input[type=text]:focus {
     font-size: 25px;
     transform: translate(0);
   }
+  @keyframes typing {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 78%;
+  }
+  80% {
+    width: 78%;
+  }
+  100% {
+    width: 0;
+  }
+}
   .intro h3{
     font-size: 17px;
   }
@@ -981,10 +995,10 @@ input[type=text]:focus {
     /* margin: 0.8em; */
   }
   .navbar a:hover{
-    box-shadow: 0 0 5px #c4d4aa74,
-            0 0 25px #c4d4aa74,
-            0 0 50px #c4d4aa74,
-            0 0 200px #c4d4aa74;
+    box-shadow: 0 0 5px #c4d4aa3e,
+            0 0 25px #c4d4aa3e,
+            0 0 50px #c4d4aa3e,
+            0 0 200px #c4d4aa3e;
     -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
   }
   #theme-icon{
@@ -1298,10 +1312,13 @@ input[type=text]:focus {
     color: white;
   }
 
-
+  .contact{
+    background-color: #191919;
+  }
   #contact-section {
     padding: 2rem 1rem;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px 30px 0px 0;
   }
 
   .contact-header h1 {
