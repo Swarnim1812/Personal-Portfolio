@@ -1,19 +1,26 @@
 // ---------------------------loader-------------------
 
-  window.addEventListener("load", function () {
-    const loader = document.getElementById("loader");
-    const content = document.getElementById("main-content");
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+  const content = document.getElementById("main-content");
+  const header = document.querySelector(".header");
 
-    // Ensures loader is visible for at least 1.5s
+  setTimeout(() => {
+    loader.style.opacity = "0";
+
     setTimeout(() => {
-      loader.style.opacity = "0";
+      loader.style.display = "none";
+      content.style.display = "block";
 
-      setTimeout(() => {
-        loader.style.display = "none";
-        content.style.display = "block";
-      }, 500);
-    }, 1500);
-  });
+      window.scrollTo(0, 0);
+      window.dispatchEvent(new Event("scroll"));
+
+      // Animate navbar/header
+      header.classList.add("fade-in-navbar");
+
+    }, 500);
+  }, 1500);
+});
 
 // -----------------------------theme toggle-----------------
 var icon = document.getElementById("theme-icon");

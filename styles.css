@@ -177,6 +177,25 @@ html{
 .navbar a.active{
   color: #9eae84;  
 }
+@keyframes fadeDownNavbar {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header.fade-in-navbar {
+  animation: fadeDownNavbar 0.8s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0; /* required to start animation from 0 */
+}
+
+
+
 #home{
   display: flex;
   align-items: center;
@@ -1583,9 +1602,9 @@ input[type=text]:focus {
     flex-direction: column !important;
     padding: 20px;
     text-align: center;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-    /* box-shadow: rgba(97, 97, 97, 0.196) 0px 10px 20px; */
+    background-color: rgba(59, 59, 59, 0.212);
+    border-radius: 30px;
+    box-shadow: rgba(2, 2, 2, 0.364) 0px 10px 20px;
   }
 
   .project-img img {
@@ -1593,7 +1612,7 @@ input[type=text]:focus {
     height: auto;
     max-width: 100%;
     /* border: rgb(95, 95, 95) 1px solid; */
-    box-shadow: rgba(255, 255, 255, 0.12) 0px 15px 16px;
+    /* box-shadow: rgba(255, 255, 255, 0.12) 0px 15px 16px; */
   }
 
   .project-desc {
